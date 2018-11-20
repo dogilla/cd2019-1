@@ -23,7 +23,11 @@ public class CDGraph implements Runnable{
     private ConcurrentLinkedDeque<String[]> list;
     private boolean active;
     private JFrame frame;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2ce813094d5f680b2eaddf9acae66b0ff80e8519
     public CDGraph(Graph g){
 	this.graph = g;
 	this.nodes = new HashSet<CDNode>();
@@ -46,7 +50,11 @@ public class CDGraph implements Runnable{
 		graph.getNode(tmp[0]).setAttribute("ui.class",  tmp[1]);
 	    }
 	    sleep(100);
+<<<<<<< HEAD
 	}       
+=======
+	}
+>>>>>>> 2ce813094d5f680b2eaddf9acae66b0ff80e8519
     }
 
     public void addChangeColor(String nodeId, String color){
@@ -98,7 +106,11 @@ public class CDGraph implements Runnable{
 		}
 	});
 	jPanel1.add(button);
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 2ce813094d5f680b2eaddf9acae66b0ff80e8519
 	Iterator<CDNode> iterator = nodes.iterator();
 	int y = 30;
 	while(iterator.hasNext()){
@@ -111,19 +123,33 @@ public class CDGraph implements Runnable{
 	frame.setVisible(true);
 
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 2ce813094d5f680b2eaddf9acae66b0ff80e8519
     private void sleep(int ms){
 	try{
 	    Thread.sleep(ms);
 	}catch(Exception ex){
+<<<<<<< HEAD
 	}	   
     }
     
+=======
+	}
+    }
+
+>>>>>>> 2ce813094d5f680b2eaddf9acae66b0ff80e8519
     public void stop(){
 	active = false;
 	Iterator<CDNode> iterator = nodes.iterator();
 	while(iterator.hasNext()){
+<<<<<<< HEAD
 	    iterator.next().stop();	    
+=======
+	    iterator.next().stop();
+>>>>>>> 2ce813094d5f680b2eaddf9acae66b0ff80e8519
 	}
     }
 
